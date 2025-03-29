@@ -22,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "dev": "concurrently \"node ./server/dbSetup.js\" \"npm start\" \"node ./server/server.js\"",
-    "build": "concurrently  \"node ./server/dbSetup.js\" \"react-scripts build\" \"node ./server/server.js\"",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
