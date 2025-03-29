@@ -27,23 +27,24 @@ const App = () => {
       toast.warn('Please enter a query.');
       return;
     }
-    try {
-      const response = await fetch('http://localhost:5000/query', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query }),
-      });
-      const data = await response.json();
-      if(data.error) {
-        toast.error('Error executing the query 👾');
-      } else {
-        toast.success('Query executed successfully 🎉');
-        setResults(data);
-        // setQuery('');
-      }
-    } catch (error) {
-      toast.error('Error executing the query 👾');
-    }
+    toast.error("Server Not Running");
+    // try {
+    //   const response = await fetch('http://localhost:5000/query', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify({ query }),
+    //   });
+    //   const data = await response.json();
+    //   if(data.error) {
+    //     toast.error('Error executing the query 👾');
+    //   } else {
+    //     toast.success('Query executed successfully 🎉');
+    //     setResults(data);
+    //     // setQuery('');
+    //   }
+    // } catch (error) {
+    //   toast.error('Error executing the query 👾');
+    // }
   };
 
   const downloadCSV = () => {
