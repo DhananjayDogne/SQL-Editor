@@ -7,7 +7,8 @@ const cors= require('cors');
 const app = express();
 const port = 5000;
 
-app.use(cors());
+// app.use(cors());
+app.use(cors({ origin: "https://sql-editor-sable.vercel.app/" })); 
 
 // Body parser middleware to parse JSON request body
 app.use(bodyParser.json());
