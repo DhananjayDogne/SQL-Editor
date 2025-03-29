@@ -28,7 +28,7 @@ const App = () => {
       return;
     }
     try {
-      const response = await fetch('https://sql-editor-v4zq.vercel.app/query', {
+      const response = await fetch('https://sql-editor-4ea6-gaj99pmc0-dhananjaydognes-projects.vercel.app/query', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query }),
