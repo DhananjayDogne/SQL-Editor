@@ -16,6 +16,8 @@ app.use(cors({
   credentials: true
 }));
 
+app.options("*", cors());
+
 // Body parser middleware to parse JSON request body
 app.use(bodyParser.json());
 
