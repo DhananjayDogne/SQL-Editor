@@ -10,7 +10,7 @@ const Navbar = () => {
             <a
               target="_blank"
               rel="nouou"
-              href="https://github.com/DhananjayDogne"
+              href="https://github.com/DhananjayDogne/SQL-Editor"
             >
               <p className="git_logo">
                 <BsGithub className="git" size={18} />
