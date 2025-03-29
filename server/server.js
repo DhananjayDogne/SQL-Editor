@@ -40,6 +40,11 @@ app.post('/query', (req, res) => {
   }
 });
 
+app.get('/',(req, res) => {
+  res.send('SQL Query Runner API');
+}
+);
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
