@@ -11,7 +11,7 @@ const allowedOrigins = ["https://sql-editor-v4zq.vercel.app"];
 
 app.use(cors({
   origin: allowedOrigins, 
-  methods: ["GET", "POST"],
+  methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"],
   credentials: true
 }));
