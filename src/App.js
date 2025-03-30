@@ -27,8 +27,10 @@ const App = () => {
       toast.warn('Please enter a query.');
       return;
     }
+    // http://localhost:5000
+    // https://sql-editor-4ea6.vercel.app/query
     try {   
-      const response = await fetch('https://sql-editor-4ea6.vercel.app/query', {
+      const response = await fetch('http://localhost:5000/query', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query }),

@@ -7,16 +7,16 @@ const cors= require('cors');
 const app = express();
 const port = 5000;
 
-const allowedOrigins = ["https://sql-editor-v4zq.vercel.app"]; 
+
+// app.options("*", cors());
+
+const allowedOrigins = ["https://sql-editor-v4zq.vercel.app","http://localhost:3000","https://sql-editor-sable.vercel.app/","https://sql-editor-git-main-dhananjaydognes-projects.vercel.app/"];
 
 app.use(cors({
-  origin: allowedOrigins, 
-  methods: ["GET", "POST", "OPTIONS"],
-  allowedHeaders: ["Content-Type"],
-  credentials: true
+    origin: allowedOrigins,
+    credentials: true
 }));
 
-app.options("*", cors());
 
 // Body parser middleware to parse JSON request body
 app.use(bodyParser.json());
