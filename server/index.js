@@ -9,7 +9,7 @@ const port = 5000;
 
 
 
-const allowedOrigins = ["https://sql-editor-v4zq.vercel.app","http://localhost:3000","https://sql-editor-sable.vercel.app/","https://sql-editor-git-main-dhananjaydognes-projects.vercel.app/"];
+const allowedOrigins = ["https://sql-editor-sable.vercel.app/","https://sql-editor-v4zq.vercel.app","http://localhost:3000","https://sql-editor-git-main-dhananjaydognes-projects.vercel.app/"];
 
 
 app.use(cors({
