@@ -1,3 +1,47 @@
+# SQL Query Runner
+
+## 📌 Overview  
+SQL Query Runner is a web-based application that allows users to execute SQL queries on predefined datasets and visualize the results. It provides a user-friendly interface for running queries and exporting results in CSV format.
+
+## Features
+- Dropdown for predifined query
+- Editor for sql with auto completion
+- Download the result of query as CSV file
+- Toast notification to make application user friendly
+
+## Deployed link  (try it)-> https://sql-editor-sable.vercel.app/
+  
+## 🛠️ Technology Stack  
+### **Frontend:**  
+- **React (v19.1.0)** – JavaScript framework for building UI  
+
+### **Major Libraries & Packages:**  
+- **PapaParse** – Efficient CSV parsing  
+- **react-csv** – Enables CSV export  
+- **react-toastify** – Provides notifications and alerts  
+- **react-icons** – Used for UI icons  
+
+## ⏳ Page Load Time  
+The page load time was measured using **Google Chrome DevTools (Performance Tab)**.  
+- **Initial Load Time:** ~0.5s (on a local development server)
+- ![Screenshot from 2025-03-30 20-57-13](https://github.com/user-attachments/assets/b7cf5676-5d3d-481e-9d9d-c6ccb8acfb80)
+
+
+## 🚀 Performance Optimizations  
+To enhance performance, the following optimizations were implemented:  
+
+### **3️⃣ Optimized CSV Parsing**  
+- `Papa.parse` with `header: true` ensures efficient CSV data handling.  
+
+### **4️⃣ Minimized Bundle Size**  
+- Removed unused dependencies and optimized production builds using `npm run build`.  
+
+These optimizations improve responsiveness, reduce load time, and enhance the overall user experience. 🚀  
+
+---
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +112,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# SQL-Editor
+
