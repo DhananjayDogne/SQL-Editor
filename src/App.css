@@ -98,6 +98,10 @@ button:hover {
 .btn_download{
   margin-left: 10px;
   background-color: #2073b8;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
 }
 .btn_download:hover{
   background-color: #1a5f8c;
